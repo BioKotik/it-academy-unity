@@ -52,7 +52,7 @@ public class HopTrack : MonoBehaviour
 
         bool isDone = position.x > minX && position.x < maxX;
 
-        if(isDone)
+        if (isDone)
         {
             HopPlatform platform = nearestPlatform.GetComponent<HopPlatform>();
             platform.SetUpDone();

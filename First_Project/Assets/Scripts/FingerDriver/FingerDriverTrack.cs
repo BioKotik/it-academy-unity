@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,11 +20,14 @@ public class FingerDriverTrack : MonoBehaviour
     [SerializeField] private bool m_ViewDebug;
 
     private Vector3[] corners;
+    public int scores;
     private TrackSegment[] segments;
+    private Dictionary<TrackSegment, bool> _segments = new Dictionary<TrackSegment, bool>();
     
     // Start is called before the first frame update
     void Start()
     {
+        scores = 0;
         //Заполняем массив опорных точек трассы
         corners = new Vector3[transform.childCount];
 
@@ -45,6 +49,7 @@ public class FingerDriverTrack : MonoBehaviour
         //Создаем массив сегментов трассы
         //Каждый треугольник описан 3-мя вершинами из массива вершин
         segments = new TrackSegment[mesh.triangles.Length / 3];
+        
         int segmentsCounter = 0;
         for (int i = 0; i < mesh.triangles.Length; i+=3)
         {
@@ -60,6 +65,10 @@ public class FingerDriverTrack : MonoBehaviour
                 mesh.vertices[mesh.triangles[i + 2]];
 
             segmentsCounter++;
+        }
+        for (int i = 0; i < segments.Length; i++)
+        {
+            _segments.Add(segments[i], false);
         }
 
         if (!m_ViewDebug)
@@ -87,11 +96,19 @@ public class FingerDriverTrack : MonoBehaviour
     /// <param name="point">Точка</param>
     /// <returns></returns>
     public bool IsPointInTrack(Vector3 point)
-    {
-        foreach (var segment in segments)
+    {      
+        for (int i = 0; i < _segments.Count; i++)
         {
-            if (segment.IsPointInSegment(point))
+            if (!_segments.ElementAt(i).Value && _segments.ElementAt(i).Key.IsPointInSegment(point))
+            {
+                _segments[segments.ElementAt(i)] = true;
+                scores++;
                 return true;
+            }
+            else if(_segments.ElementAt(i).Key.IsPointInSegment(point))
+            {
+                return true;
+            }
         }
 
         return false;

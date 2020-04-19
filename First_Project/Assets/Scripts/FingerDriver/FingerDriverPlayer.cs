@@ -13,12 +13,16 @@ public class FingerDriverPlayer : MonoBehaviour
 
      private void Update()
      {
-          if (m_Track.IsPointInTrack(m_TrackPoint.position))
-          {
-               transform.Translate(transform.up * Time.deltaTime * m_CarSpeed, Space.World);
-               transform.Rotate(0f,0f,m_MaxSteer * m_Input.SteerAxis * Time.deltaTime);
-          }
-          else SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (m_Track.IsPointInTrack(m_TrackPoint.position))
+        {
+            transform.Translate(transform.up * Time.deltaTime * m_CarSpeed, Space.World);
+            transform.Rotate(0f, 0f, m_MaxSteer * m_Input.SteerAxis * Time.deltaTime);
+        }
+        else
+        {
+            print($"Game over at {m_Track.scores}");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        };
      }
      
      
