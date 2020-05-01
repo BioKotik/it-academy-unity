@@ -41,6 +41,24 @@ public class HopPlayer : MonoBehaviour
 
         if(m_Track.IsBallOnPlatform(transform.position))
         {
+            if (transform.position.x > 0.5f)
+            {
+                m_JumpCurve.MoveKey(1, new Keyframe(0.5f, 2f));
+                m_BallSpeed = 1.3f;
+            }
+
+            else if (transform.position.x < -0.5f)
+            {
+                m_JumpCurve.MoveKey(1, new Keyframe(0.5f, 0.5f));
+                m_BallSpeed = 0.8f;
+            }
+
+            else
+            {
+                m_JumpCurve.MoveKey(1, new Keyframe(0.5f, 1f));
+                m_BallSpeed = 1f;
+            }
+
             return;
         }
 
