@@ -63,10 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Types.cs" />
     <Compile Include="Assets\Scripts\FingerDriver\FingerDriverCamera.cs" />
     <Compile Include="Assets\Scripts\FingerDriver\FingerDriverInput.cs" />
     <Compile Include="Assets\Scripts\FingerDriver\FingerDriverPlayer.cs" />
     <Compile Include="Assets\Scripts\FingerDriver\FingerDriverTrack.cs" />
+    <Compile Include="Assets\Scripts\FitInTheHole\FitInTheHole_FigureTweener.cs" />
+    <Compile Include="Assets\Scripts\FitInTheHole\FitInTheHole_LevelGenerator.cs" />
+    <Compile Include="Assets\Scripts\FitInTheHole\FitInTheHole_Template.cs" />
+    <Compile Include="Assets\Scripts\FitInTheHole\FitInTheHole_Wall.cs" />
     <Compile Include="Assets\Scripts\Hop\HopCamera.cs" />
     <Compile Include="Assets\Scripts\Hop\HopInput.cs" />
     <Compile Include="Assets\Scripts\Hop\HopPlatform.cs" />
