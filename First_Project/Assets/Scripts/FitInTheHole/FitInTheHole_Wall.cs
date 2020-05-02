@@ -13,7 +13,7 @@ public class FitInTheHole_Wall
         GenerateWall(sizeX, sizeY, prefab);
     }
 
-    public void SetUpWall(FitInTheHole_Template template, float position)
+    public void SetupWall(FitInTheHole_Template template, float position)
     {
         m_Parent.transform.position = new Vector3(0f, 0.5f, position);
         foreach (var cube in m_Cubes)

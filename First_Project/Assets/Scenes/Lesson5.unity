@@ -233,16 +233,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 983988532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0536d04de0af23149b78993e658ab95a, type: 3}
+  m_Script: {fileID: 11500000, guid: 21dc37f200e3f475daa853f607a2de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_CubePrefab: {fileID: 5488187772009370913, guid: 0c24631929f2bf947b11c8acad2f2ae9,
     type: 3}
-  m_BaseSpeed: 5
+  m_BaseSpeed: 2
   m_WallDistance: 20
   m_Templates:
   - {fileID: 6133450821750799719, guid: bbd77544deb83524eb0fa93df62dd246, type: 3}
   - {fileID: 6133450821750799719, guid: 580c3742dbd7f734eb88c97b09eca30d, type: 3}
+  - {fileID: 6133450821750799719, guid: b2612675b3a6a5c438e51f28ab9aeb72, type: 3}
   m_FigurePoint: {fileID: 1135070230}
 --- !u!64 &983988534
 MeshCollider:
@@ -254,7 +255,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}

@@ -22,16 +22,16 @@ public class FitInTheHole_Template : MonoBehaviour
         return figure;
     }
 
-    public void SetUpRandomFigure()
+    public void SetupRandomFigure()
     {
         int rand = Random.Range(0, m_PositionsVariants.Length);
 
         for (int i = 0; i < m_PositionsVariants.Length; i++)
         {
             if(i == rand)
-            {
-                m_PositionsVariants[i].gameObject.SetActive(true);
+            {              
                 m_CurrentTarget = m_PositionsVariants[i].transform;
+                m_PositionsVariants[i].gameObject.SetActive(false);
                 continue;
             }
 
@@ -82,5 +82,11 @@ public class FitInTheHole_Template : MonoBehaviour
     private bool IsMovementPossible(int dir)
     {
         return currentPosition + dir >= 0 && currentPosition + dir < m_PositionsVariants.Length;
+    }
+
+    public bool IsPlayerOnTarget()
+    {
+        return m_PlayerPosition.position.x == m_CurrentTarget.position.x 
+            && m_PlayerPosition.position.y == m_CurrentTarget.position.y;
     }
 }
