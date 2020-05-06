@@ -81,6 +81,12 @@
     <Compile Include="Assets\Scripts\Lesson 1\HelloWorld.cs" />
     <Compile Include="Assets\Scripts\Lesson 1\InstatiateObjects.cs" />
     <Compile Include="Assets\Scripts\Lesson 1\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\MatchThree\MatchThree_Candy.cs" />
+    <Compile Include="Assets\Scripts\MatchThree\MatchThree_CandyData.cs" />
+    <Compile Include="Assets\Scripts\MatchThree\MatchThree_Cell.cs" />
+    <Compile Include="Assets\Scripts\MatchThree\MatchThree_Controller.cs" />
+    <Compile Include="Assets\Scripts\MatchThree\MatchThree_Field.cs" />
+    <Compile Include="Assets\Scripts\MatchThree\MatchThree_Types.cs" />
     <Compile Include="Assets\Scripts\Mathf\MathfTriangles.cs" />
     <Compile Include="Assets\Scripts\StickHero\StickHeroController.cs" />
     <Compile Include="Assets\Scripts\StickHero\StickHeroPlatform.cs" />

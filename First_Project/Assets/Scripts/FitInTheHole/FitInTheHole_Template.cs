@@ -63,9 +63,10 @@ public class FitInTheHole_Template : MonoBehaviour
         {
             return;
         }
+        int dir = 1;
         currentPosition += 1;
         tweener = m_PlayerPosition.gameObject.AddComponent<FitInTheHole_FigureTweener>();
-        tweener.Tween(m_PlayerPosition.position, m_PositionsVariants[currentPosition].position);
+        tweener.Tween(m_PlayerPosition.position, m_PositionsVariants[currentPosition].position, dir);
     }
 
     private void MoveRight()
@@ -74,9 +75,10 @@ public class FitInTheHole_Template : MonoBehaviour
         {
             return;
         }
+        int dir = 0;
         currentPosition -= 1;
         tweener = m_PlayerPosition.gameObject.AddComponent<FitInTheHole_FigureTweener>();
-        tweener.Tween(m_PlayerPosition.position, m_PositionsVariants[currentPosition].position);
+        tweener.Tween(m_PlayerPosition.position, m_PositionsVariants[currentPosition].position, dir);
     }
 
     private bool IsMovementPossible(int dir)

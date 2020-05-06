@@ -6,6 +6,7 @@ public class FitInTheHole_FigureTweener : MonoBehaviour
 {
     private Vector3 fromPosition;
     private Vector3 toPosition;
+    RaycastHit hit;
 
     private Vector3 rotationPoint;
     private float rotationAngle;
@@ -15,7 +16,7 @@ public class FitInTheHole_FigureTweener : MonoBehaviour
     float timer;
 
 
-    public void Tween(Vector3 from, Vector3 to)
+    public void Tween(Vector3 from, Vector3 to, int dir)
     {
         fromPosition = from;
         toPosition = to;
@@ -48,7 +49,21 @@ public class FitInTheHole_FigureTweener : MonoBehaviour
         }
         else
         {
-            //TODO - корректное смещение по по оси Y не поддерживается            
+            if (Physics.Raycast(fromPosition,Vector3.right))
+            {
+                print("Слева");
+                rotationPoint.x += 0.5f;
+                rotationDirection = to.y < from.y ? 1 : -1;
+            }
+
+            if (Physics.Raycast(fromPosition, Vector3.left))
+            {
+                print("Справа");
+                rotationPoint.x -= 0.5f;
+                rotationDirection = to.y < from.y ? 1 : -1;
+            }
+            //TODO - корректное смещение по по оси Y не поддерживается
+
         }
     }
 
