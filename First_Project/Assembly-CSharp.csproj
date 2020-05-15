@@ -63,6 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_GameController.cs" />
+    <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_LevelGenerator.cs" />
+    <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Obstacle.cs" />
+    <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Snake.cs" />
+    <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Types.cs" />
     <Compile Include="Assets\Scripts\FingerDriver\FingerDriverCamera.cs" />
     <Compile Include="Assets\Scripts\FingerDriver\FingerDriverInput.cs" />
     <Compile Include="Assets\Scripts\FingerDriver\FingerDriverPlayer.cs" />
@@ -81,6 +86,16 @@
     <Compile Include="Assets\Scripts\Lesson 1\HelloWorld.cs" />
     <Compile Include="Assets\Scripts\Lesson 1\InstatiateObjects.cs" />
     <Compile Include="Assets\Scripts\Lesson 1\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\CharacterMovement.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\InputManager.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\Interfaces.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\Platform.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\Player.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\StaticObject.cs" />
     <Compile Include="Assets\Scripts\MatchThree\MatchThree_Candy.cs" />
     <Compile Include="Assets\Scripts\MatchThree\MatchThree_CandyData.cs" />
     <Compile Include="Assets\Scripts\MatchThree\MatchThree_Cell.cs" />
@@ -93,6 +108,12 @@
     <Compile Include="Assets\Scripts\StickHero\StickHeroPlatformSpawner.cs" />
     <Compile Include="Assets\Scripts\StickHero\StickHeroPlayer.cs" />
     <Compile Include="Assets\Scripts\StickHero\StickHeroStick.cs" />
+    <Compile Include="Assets\Scripts\Test\TestCamera.cs" />
+    <Compile Include="Assets\Scripts\Test\TestInput.cs" />
+    <Compile Include="Assets\Scripts\Test\TestPlatform.cs" />
+    <Compile Include="Assets\Scripts\Test\TestPlayer.cs" />
+    <Compile Include="Assets\Scripts\Test\TestTrack.cs" />
+    <Compile Include="Assets\Scripts\Test\TestUi.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/BioKotik/it-academy-unity/First_Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -113,6 +134,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/BioKotik/it-academy-unity/First_Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:/Users/BioKotik/it-academy-unity/First_Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/BioKotik/it-academy-unity/First_Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
