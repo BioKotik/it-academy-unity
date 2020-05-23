@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour, IEnemy, IHitBox
 {
     [SerializeField]
     private int health = 1;
+    [SerializeField] private Animator animator;
+
     public int Health
     {
         get => health;
@@ -21,7 +24,8 @@ public class Enemy : MonoBehaviour, IEnemy, IHitBox
 
     public void Die()
     {
-        print("Enemy is died!");
+        animator.SetTrigger("Die");
+        Destroy(gameObject, 0.5f);
     }
 
     public void Hit(int damage)

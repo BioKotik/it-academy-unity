@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -71,7 +72,7 @@ public class StaticObject : MonoBehaviour, IHitBox
 
     public void Die()
     {
-        print("Object is died!");
+        Destroy(gameObject);
     }
 
     public void Hit(int damage)

@@ -73,9 +73,11 @@
     <Compile Include="Assets\Scripts\Lesson2_1\Platform.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\Player.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\PlayerWeapon.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\StaticObject.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\WeaponData.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/BioKotik/it-academy-unity/LessonBlock2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
