@@ -9,8 +9,6 @@ public class HopTrack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
         platforms.Add(m_Platform.gameObject);
         for (int i = 0; i < 25; i++)
         {

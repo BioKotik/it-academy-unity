@@ -1,0 +1,52 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "b6808a35-9e68-4d76-806c-96aac94bea2c",
+            "actions": [
+                {
+                    "name": "FireAction",
+                    "type": "Button",
+                    "id": "3b08183e-5c6e-4a9f-adf6-9777f47cbe04",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SkillAction",
+                    "type": "Button",
+                    "id": "04fe8b79-4265-4be6-ad52-2881e06ecd5e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7e56d5db-aa9c-45e0-93e0-f2711cc7280b",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "890e36b5-9d98-4e5c-884a-ef79544b5f69",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SkillAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

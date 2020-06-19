@@ -9,6 +9,7 @@ public class Player : MonoBehaviour, IPlayer, IHitBox
     private PlayerWeapon[] weapons;
     [SerializeField] private Animator animator;
     [SerializeField] private Animator weaponAnimator;
+    [SerializeField] private Camera camera;
     private int health = 1;
     public int Health
     {

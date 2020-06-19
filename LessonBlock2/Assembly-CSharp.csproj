@@ -64,7 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Lesson2_1\CharacterMovement.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\Coin.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\GameData.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\GameManager.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\InputManager.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\Interfaces.cs" />
@@ -76,8 +78,10 @@
     <Compile Include="Assets\Scripts\Lesson2_1\PlayerWeapon.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\SceneTransition.cs" />
+    <Compile Include="Assets\Scripts\Lesson2_1\StarBonus.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\StaticObject.cs" />
     <Compile Include="Assets\Scripts\Lesson2_1\WeaponData.cs" />
+    <Compile Include="Assets\Scripts\Test\TestPlayerMovement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/BioKotik/it-academy-unity/LessonBlock2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

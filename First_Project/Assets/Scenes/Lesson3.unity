@@ -1423,6 +1423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineRenderer: {fileID: 1229553046}
   m_ViewDebug: 1
+  scores: 0
 --- !u!1 &1465555314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,7 +1947,7 @@ MonoBehaviour:
   m_Track: {fileID: 1229553047}
   m_Input: {fileID: 1465555315}
   m_TrackPoint: {fileID: 830535883}
-  m_CarSpeed: 0.7
+  m_CarSpeed: 1.5
   m_MaxSteer: 90
 --- !u!65 &2012598319
 BoxCollider:
