@@ -63,6 +63,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AI\CheckOutOfField.cs" />
+    <Compile Include="Assets\Scripts\AI\CheckPlayerDeath.cs" />
+    <Compile Include="Assets\Scripts\AI\IdleNode.cs" />
+    <Compile Include="Assets\Scripts\AI\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\AI\Node.cs" />
+    <Compile Include="Assets\Scripts\AI\Selector.cs" />
+    <Compile Include="Assets\Scripts\AI\Sequence.cs" />
+    <Compile Include="Assets\Scripts\AI\SkeletonAi.cs" />
+    <Compile Include="Assets\Scripts\AI\SkeletonAttack.cs" />
+    <Compile Include="Assets\Scripts\AI\SkeletonIdle.cs" />
+    <Compile Include="Assets\Scripts\AI\SkeletonMove.cs" />
+    <Compile Include="Assets\Scripts\AI\VictoryWarCry.cs" />
+    <Compile Include="Assets\Scripts\AI\WarCry.cs" />
     <Compile Include="Assets\Scripts\BackSideTrigger.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\Bonus.cs" />
@@ -70,10 +83,14 @@
     <Compile Include="Assets\Scripts\BonusGold.cs" />
     <Compile Include="Assets\Scripts\DelayRun.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\HeadTracking.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\InputController.cs" />
     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
+    <Compile Include="Assets\Scripts\ObjectRotator.cs" />
+    <Compile Include="Assets\Scripts\ObjectsPool.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerInputController.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/BioKotik/it-academy-unity/LessonBlock3/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

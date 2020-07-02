@@ -9,7 +9,7 @@ public class BackSideTrigger : MonoBehaviour
         var ball = other.gameObject.GetComponent<Ball>();
         if(ball != null)
         {
-            Destroy(ball.gameObject);
+            ball.gameObject.SetActive(false);
         }
     }
 }

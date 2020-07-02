@@ -10,6 +10,7 @@ public enum InputCommand
     Fire,
     Skill,
     Move,
+    DeadShot,
 
 }
 
@@ -19,13 +20,19 @@ public class InputController : MonoBehaviour
 
     [SerializeField] private Button fireButton;
     [SerializeField] private Button skillButton;
-    [SerializeField] private Button moveButton;
+    [SerializeField] private Button deadShotButton;
 
     private void Awake()
     {
         fireButton.onClick.AddListener(OnFireButton);
         skillButton.onClick.AddListener(OnSkillButton);
-        moveButton.onClick.AddListener(OnMoveButton);
+        deadShotButton.onClick.AddListener(OnDeadShotButton);
+    }
+
+    private void OnDeadShotButton()
+    {
+        OnInputAction?.Invoke(InputCommand.DeadShot);
+        Debug.Log("DeadShot");
     }
 
     private void OnFireButton()
@@ -69,6 +76,8 @@ public class InputController : MonoBehaviour
             case "SkillAction":
                 OnSkillButton();
                 break;
+
+            
 
             default:
                 break;

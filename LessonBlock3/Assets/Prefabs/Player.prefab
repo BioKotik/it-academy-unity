@@ -864,6 +864,7 @@ Transform:
   - {fileID: 3031143999483887543}
   - {fileID: 3031143999483887545}
   - {fileID: 3031143999483887549}
+  - {fileID: 156506741446145146}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -899,8 +900,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3031143999493492739}
-  ball: {fileID: 873079584704884098, guid: 7bb6e51f217a48845bb636e9f4249a12, type: 3}
+  ball:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   firePoint: {fileID: 3716767972967947030}
+  skillPoint: {fileID: 0}
+  fireButton: {fileID: 0}
+  skillButton: {fileID: 0}
+  deadShotButton: {fileID: 0}
+  deadShotEffect: {fileID: 0}
 --- !u!1 &3031143999483978657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,4 +1905,34 @@ Transform:
   - {fileID: 3031143999483887589}
   m_Father: {fileID: 3031143999483887521}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4045898552369557228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156506741446145146}
+  m_Layer: 0
+  m_Name: SkillPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &156506741446145146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045898552369557228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.425, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3031143999483887551}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
